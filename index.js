@@ -178,7 +178,12 @@ document.getElementById('non-veg').addEventListener('click', () => {
 
 document.getElementById('above').addEventListener('click', () => {
     // console.log('hello');
+    let nonVegRecipes = arr.filter(item => item.rating >=4);
+    menu(nonVegRecipes);
+})
 
-    let nonVegRecipes = arr.filter(item => item.rating < 4);
+document.getElementById('below').addEventListener('click', () => {
+    // console.log('hello');
+    let nonVegRecipes = arr.filter(item => item.rating <4);
     menu(nonVegRecipes);
 })

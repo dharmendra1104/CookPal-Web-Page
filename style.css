@@ -5,18 +5,20 @@
 }
 
 body {
-    margin: 80px;
+    margin: 20px;
     font-family: Arial, sans-serif;
+    background-color: #FFFFEC;
 }
 
 nav {
-    background-color: ;
+    background-color: #a5dd9bab;
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 97%;
+    border-radius: 5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
 }
@@ -30,16 +32,24 @@ nav {
 }
 
 .logo img {
-    height: 30px;
+    height: 40px;
+    width: 9rem;
     margin-right: 10px;
 }
 
 
 .nav-list {
+    font-size: 18px;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: end;
+}
+
+.nav-list li a:hover {
+    background-color: #509E2F;
+    color: white;
 }
 
 .nav-list-item {
@@ -86,7 +96,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20px;
-    position: relative;
+    /* position: relative; */
 }
 
 .text {
@@ -127,6 +137,7 @@ nav {
     background-color: #509E2F;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -152,14 +163,17 @@ nav {
 }
 
 #all {
+    cursor: pointer;
     background-color: #EAAA00;
 }
 
 #veg {
+    cursor: pointer;
     background-color: #C4D600;
 }
 
 #non-veg {
+    cursor: pointer;
     background-color: #DC582A;
 }
 
@@ -173,12 +187,12 @@ nav {
     padding: 10px;
     margin-top: 20px;
     height: 150px;
-    width: 15%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     gap: 15px;
     font-size: 20px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
 }
 
 .checboxes {
@@ -186,33 +200,14 @@ nav {
 }
 
 .checboxes span {
+
     margin-left: 8px;
 }
 
 input[type=checkbox] {
+    cursor: pointer;
     background-color: green;
 }
-
-/* .recipes{
-    display: flex;
-    margin-left: 10px;
-    justify-content: s;
-    flex-direction: spa;
-    margin-left: 20px;
-    margin-top: 20px;
-    height: 100vh;
-    width: 100%;
-    gap: 5px;
-    background-color:yellow ;
-}
-.recipe{
-    margin: 5px;
-    height: 300px;
-    width: 306px;
-    border-radius: 5px;
-    box-shadow: 2px 4px 4px rgba(0,0,0,0.5);
-    background-color: white;
-} */
 
 .recipes {
     display: flex;
@@ -224,7 +219,7 @@ input[type=checkbox] {
     height: 100vh;
     width: 100%;
     /* gap: 10px;  */
-    background-color: yellow;
+    background-color: ;
 }
 
 .recipe {
@@ -280,4 +275,10 @@ img {
 .com {
     display: flex;
     gap: 10px;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: white;
 }
