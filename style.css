@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 80px;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: ;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list-item {
+    margin-right: 20px;
+}
+
+.nav-list-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.picture {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.title {
+    height: 250px;
+    position: relative;
+    height: 300px;
+    width: 100%;
+
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.pic {
+    height: 230px;
+    width: 100%;
+    padding: 30px;
+    margin-top: 80px;
+    background-image: url('3b0de3e0090f8898c24f6e2c892fee6f\ \(2\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+}
+
+.text {
+    color: white;
+    padding: 40px;
+    width: 300px;
+}
+
+.text p {
+    color: red;
+}
+
+.search-bar {
+    width: 100%;
+    margin-top: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+    display: flex;
+}
+
+.search>input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search>input {
+    background-color: #F3F3F3;
+}
+
+.search button {
+    padding: 7px;
+    background-color: #509E2F;
+    color: white;
+    border: none;
+}
+
+
+.choises {
+    margin-top: 40px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.select span {
+    flex: 1;
+}
+
+#all {
+    background-color: #EAAA00;
+}
+
+#veg {
+    background-color: #C4D600;
+}
+
+#non-veg {
+    background-color: #DC582A;
+}
+
+.items {
+    display: flex;
+    gap: 5px;
+
+}
+
+.filter {
+    padding: 10px;
+    margin-top: 20px;
+    height: 150px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+}
+
+.checboxes {
+    font-size: 12px;
+}
+
+.checboxes span {
+    margin-left: 8px;
+}
+
+input[type=checkbox] {
+    background-color: green;
+}
+
+/* .recipes{
+    display: flex;
+    margin-left: 10px;
+    justify-content: s;
+    flex-direction: spa;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 100vh;
+    width: 100%;
+    gap: 5px;
+    background-color:yellow ;
+}
+.recipe{
+    margin: 5px;
+    height: 300px;
+    width: 306px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.5);
+    background-color: white;
+} */
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 100vh;
+    width: 100%;
+    /* gap: 10px;  */
+    background-color: yellow;
+}
+
+.recipe {
+    margin-left: 20px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+
+
+
+img {
+    margin: 2px;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.discription {
+    margin: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dis-1,
+.dis-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dis-1 i {
+    color: orange;
+}
+
+.dis-2 h5 {
+    color: #EAAA00;
+}
+
+.discription i {
+    padding: 2px;
+}
+
+.recipe p {
+    margin-left: 9px;
+    margin-top: 8px;
+    color: #ccc;
+}
+
+.com {
+    display: flex;
+    gap: 10px;
+}

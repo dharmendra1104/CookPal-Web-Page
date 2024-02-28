@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <section class="navbar">
+    <nav>
+      <div class="logo">
+        <img src="967cc7d034dc411ca2013fff2fed228d.png.jpg" alt="#">
+      </div>
+
+      <ul class="nav-list">
+        <li class="nav-list-item"><a href="#">Home</a></li>
+        <li class="nav-list-item"><a href="#">Explore</a></li>
+        <li class="nav-list-item"><a href="#">Help</a></li>
+      </ul>
+
+      <div class="profile">
+        <img src="f96e56b91aae9daed41ea781c3d6dc58.jpg.jpg" alt="#" class="picture">
+      </div>
+    </nav>
+  </section>
+
+  <div class="pic">
+    <div class="text">
+      <p>Treding now</p>
+      <h2>Mike's famous salad with cheese</h2>
+      <h6>By John Mike</h6>
+    </div>
+  </div>
+
+
+  <div class="search-bar">
+    <h4>Search For Recipes</h4>
+    <div class="search">
+      <input type="text" placeholder="Search for recipes" id="input">
+      <button class="btn" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </div>
+
+  <div class="choises">
+    <div class="select" id="all"><span>All Recipes</span><i class="fa-solid fa-angle-right"></i></div>
+    <div class="select" id="veg"><span>Veg Recipes Only</span><i class="fa-solid fa-angle-right"></i></div>
+    <div class="select" id="non-veg"><span>Non veg Recipes</span><i class="fa-solid fa-angle-right"></i></div>
+  </div>
+  <div class="items">
+    <div class="filter">
+      <h4>filter</h4>
+      <h6>Rating</h6>
+      <div class="checboxes">
+        <input type="checkbox" id="above"><span>4 and Above</span><br>
+        <input type="checkbox" id="below"><span>Below 4</span>
+      </div>
+    </div>
+    <div class="recipes">
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
