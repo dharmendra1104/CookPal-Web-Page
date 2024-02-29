@@ -135,7 +135,10 @@ function menu(item) {
           <div class="dis-2">
             <h5>${item.time}</h5>
             <div class="li-com">
-              <span class="com"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-comment"></i></span>
+              <span class="com">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-comment"></i>
+              </span>
             </div>
           </div>
         </div>
@@ -145,12 +148,10 @@ function menu(item) {
     let recipes = document.querySelector('.recipes')
     let all = foods.join('')
     recipes.innerHTML = all
-    // console.log('hello')
 }
 menu(arr)
 
 function search() {
-    // console.log('hello')
     let value = document.getElementById('input').value.toLowerCase()
     let find = arr.filter(item => {
         const categories = `${item.name} ${item.time} ${item.type} ${item.isLiked} ${item.rating}`.toLowerCase();
@@ -177,13 +178,18 @@ document.getElementById('non-veg').addEventListener('click', () => {
 });
 
 document.getElementById('above').addEventListener('click', () => {
-    // console.log('hello');
-    let nonVegRecipes = arr.filter(item => item.rating >=4);
-    menu(nonVegRecipes);
+    let highRatedRecipes = arr.filter(item => item.rating >=4);
+    menu(highRatedRecipes);
 })
 
 document.getElementById('below').addEventListener('click', () => {
-    // console.log('hello');
-    let nonVegRecipes = arr.filter(item => item.rating <4);
-    menu(nonVegRecipes);
+    let lowRatedRecipes = arr.filter(item => item.rating <4);
+    menu(lowRatedRecipes);
 })
+
+// function toggleLike(element) {
+//     const index = element.dataset.index;
+//     arr[index].isLiked = !arr[index].isLiked;
+//     const heartIcon = element.querySelector('.fa-heart');
+//     heartIcon.classList.toggle('liked', arr[index].isLiked);
+// }

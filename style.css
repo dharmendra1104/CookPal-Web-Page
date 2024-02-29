@@ -99,7 +99,6 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20px;
-    /* position: relative; */
 }
 
 .text {
@@ -189,13 +188,11 @@ nav {
 .filter {
     padding: 10px;
     margin-top: 20px;
-    /* height: 150px; */
     width: 20%;
     display: flex;
     flex-direction: column;
     gap: 15px;
     font-size: 20px;
-    /* border: 1px solid #ccc; */
 }
 
 .checboxes {
@@ -207,7 +204,7 @@ nav {
     margin-left: 8px;
 }
 
-#above[type="checkbox"]:after{
+#above[type="checkbox"]:after {
     cursor: pointer;
     background-color: green;
     color: black;
@@ -221,10 +218,8 @@ nav {
     margin-left: 10px;
     margin-top: 20px;
     border-radius: 7px;
-    /* height: 100vh; */
     width: 100%;
-    /* gap: 10px;  */
-    background-color : #a5dd9b34;
+    background-color: #a5dd9b34;
 }
 
 .recipe {
@@ -235,9 +230,6 @@ nav {
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
     background-color: white;
 }
-
-
-
 
 img {
     margin: 2px;
@@ -282,38 +274,37 @@ img {
     gap: 10px;
 }
 
-.social{
+.social {
     display: flex;
     justify-content: center;
     gap: 18px;
     font-size: 28px;
 }
 
-footer{
+footer {
     height: 22rem;
     background-color: #a5dd9bab;
     border-radius: 5px;
 }
 
-.foot { 
+.foot {
     padding-top: 3rem;
     gap: 10rem;
-    /* position: relative; */
     height: 300px;
     width: 100%;
-    /* background-color: white; */
     display: flex;
     font-size: 14px;
 }
 
-.icon{
+.icon {
     background-color: ;
     width: 16rem;
     line-height: 23px;
     word-spacing: 5px;
     margin-left: 2rem;
 }
-.icon img{
+
+.icon img {
     height: 40px;
     width: 9rem;
     margin-bottom: 10px;
@@ -332,15 +323,15 @@ footer{
     gap: 16px;
 }
 
-#list-2{
+#list-2 {
     background-color: ;
     width: 24rem;
     font-size: 13px;
     line-height: 23px;
-    word-spacing: 5px; 
+    word-spacing: 5px;
 }
 
-#list-2 input{
+#list-2 input {
     padding: 7px;
     width: 72%;
     background-color: #f7f7f7;
@@ -350,14 +341,18 @@ footer{
 
 }
 
-#list-2 p{
+#list-2 p {
     margin-bottom: 20px;
     color: #6b6767;
 }
 
-.icon button{
+.icon button {
     padding: 9px;
     border-radius: 2px;
     background-color: #509E2F;
     border: white;
+}
+
+.liked {
+    color: red;
 }
