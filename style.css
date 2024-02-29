@@ -220,10 +220,11 @@ nav {
     align-items: flex-start;
     margin-left: 10px;
     margin-top: 20px;
+    border-radius: 7px;
     /* height: 100vh; */
     width: 100%;
     /* gap: 10px;  */
-    background-color:y ;
+    background-color : #a5dd9b34;
 }
 
 .recipe {
@@ -334,13 +335,14 @@ footer{
 #list-2{
     background-color: ;
     width: 24rem;
+    font-size: 13px;
     line-height: 23px;
     word-spacing: 5px; 
 }
 
 #list-2 input{
     padding: 7px;
-    width: 70%;
+    width: 72%;
     background-color: #f7f7f7;
     border: 1px solid #ccc;
     border-radius: 2px;
@@ -350,6 +352,7 @@ footer{
 
 #list-2 p{
     margin-bottom: 20px;
+    color: #6b6767;
 }
 
 .icon button{
