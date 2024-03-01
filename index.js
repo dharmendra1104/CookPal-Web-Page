@@ -136,7 +136,7 @@ function menu(item) {
             <h5>${item.time}</h5>
             <div class="li-com">
               <span class="com">
-              <i class="fa-regular fa-heart"></i>
+              <span class="liked like"><i class="fa-regular fa-heart"></i></span>
               <i class="fa-regular fa-comment"></i>
               </span>
             </div>
@@ -187,9 +187,18 @@ document.getElementById('below').addEventListener('click', () => {
     menu(lowRatedRecipes);
 })
 
-// function toggleLike(element) {
-//     const index = element.dataset.index;
-//     arr[index].isLiked = !arr[index].isLiked;
-//     const heartIcon = element.querySelector('.fa-heart');
-//     heartIcon.classList.toggle('liked', arr[index].isLiked);
-// }
+
+document.querySelectorAll('.liked').forEach((like) => {
+    like.addEventListener('click', () => {
+        like.classList.toggle('like');
+        if (like.classList.contains('like')) {
+            like.style.color = 'red';
+        } else {
+            like.style.color = ''; 
+        }
+    });
+});
+
+
+
+

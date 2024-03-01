@@ -353,6 +353,6 @@ footer {
     border: white;
 }
 
-.liked {
-    color: red;
+.liked.like{
+    color: ;
 }
