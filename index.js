@@ -199,6 +199,11 @@ document.querySelectorAll('.liked').forEach((like) => {
     });
 });
 
+document.getElementById('menu').addEventListener('click',()=>{
+    let list=document.querySelector('.nav-list')
+    list.classList.toggle('show')
+})
+
 
 
 

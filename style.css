@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -103,12 +104,14 @@ nav {
 }
 
 .text {
+    font-size: 17px;
     color: white;
     padding: 40px;
     width: 300px;
 }
 
 .text p {
+    font-size: 20px;
     color: red;
 }
 
@@ -205,10 +208,28 @@ nav {
     margin-left: 8px;
 }
 
-#above[type="checkbox"]:after {
-    cursor: pointer;
-    background-color: green;
-    color: black;
+.checboxes input[type="checkbox"] {
+    margin-right: 5px;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    /* background-color: #509E2F; */
+    border: 2px solid #509E2F;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+}
+
+.checboxes input[type="checkbox"]:checked::before {
+    content: '\2713';
+    font-size: 14px;
+    font-weight: 700;
+    color: #509E2F;
+    position: absolute;
+    /* background-color: #509E2F; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .recipes {
@@ -356,4 +377,48 @@ footer {
 
 .liked.like{
     color: ;
+}
+
+.menu{
+    margin-top: 5px;
+    display: none;
+}
+.menu{
+    padding: 5px;
+    background-color: #368f11;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+@media screen and (max-width:768px) {
+    nav{
+        display: inline;
+        width: 92.5%;
+    }
+    .profile{
+        position: absolute;
+        display: flex;
+        top: 0;
+        right: 0;
+        padding: 25px;
+    }
+    .nav-list{
+        margin:25px;
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+    
+    }
+    .show{
+        display: none;
+    }
+    .logo{
+        margin-left: 15px;
+        gap: 15px;
+    }
+    .menu{
+        display: block;
+    }
+
 }
