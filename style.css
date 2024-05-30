@@ -25,9 +25,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
+    z-index: 1000;
 }
 
-
+/* Logo Styling */
 .logo {
     display: flex;
     align-items: center;
@@ -37,23 +38,27 @@ nav {
 
 .logo img {
     height: 48px;
-    width: 9rem;
+    width: auto;
     margin-right: 10px;
 }
 
+.menu {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+}
 
+/* Navigation List Styling */
 .nav-list {
     font-size: 18px;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: end;
-}
-
-.nav-list li a:hover {
-    background-color: #509E2F;
-    color: white;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .nav-list-item {
@@ -63,11 +68,28 @@ nav {
 .nav-list-item a {
     text-decoration: none;
     color: black;
+    padding: 8px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+.nav-list-item a:hover {
+    background-color: #509E2F;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Profile Picture Styling */
 .profile {
     display: flex;
     align-items: center;
+}
+
+.profile .picture {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    margin-left: 10px;
+    object-fit: cover;
 }
 
 .picture {
@@ -375,15 +397,16 @@ footer {
     border: white;
 }
 
-.liked.like{
+.liked.like {
     color: ;
 }
 
-.menu{
+.menu {
     margin-top: 5px;
     display: none;
 }
-.menu{
+
+.menu {
     padding: 5px;
     background-color: #368f11;
     color: white;
@@ -392,32 +415,36 @@ footer {
 }
 
 @media screen and (max-width:768px) {
-    nav{
+    nav {
         display: inline;
         width: 92.5%;
     }
-    .profile{
+
+    .profile {
         position: absolute;
         display: flex;
         top: 0;
         right: 0;
-        padding: 25px;
+        padding: 15px;
     }
-    .nav-list{
-        margin:25px;
+
+    .nav-list {
+        margin: 25px;
         display: flex;
         gap: 25px;
         flex-direction: column;
-    
     }
-    .show{
+
+    .show {
         display: none;
     }
-    .logo{
+
+    .logo {
         margin-left: 15px;
         gap: 15px;
     }
-    .menu{
+
+    .menu {
         display: block;
     }
 

@@ -178,12 +178,12 @@ document.getElementById('non-veg').addEventListener('click', () => {
 });
 
 document.getElementById('above').addEventListener('click', () => {
-    let highRatedRecipes = arr.filter(item => item.rating >=4);
+    let highRatedRecipes = arr.filter(item => item.rating >= 4);
     menu(highRatedRecipes);
 })
 
 document.getElementById('below').addEventListener('click', () => {
-    let lowRatedRecipes = arr.filter(item => item.rating <4);
+    let lowRatedRecipes = arr.filter(item => item.rating < 4);
     menu(lowRatedRecipes);
 })
 
@@ -194,13 +194,13 @@ document.querySelectorAll('.liked').forEach((like) => {
         if (like.classList.contains('like')) {
             like.style.color = 'red';
         } else {
-            like.style.color = ''; 
+            like.style.color = '';
         }
     });
 });
 
-document.getElementById('menu').addEventListener('click',()=>{
-    let list=document.querySelector('.nav-list')
+document.getElementById('menu').addEventListener('click', () => {
+    let list = document.querySelector('.nav-list')
     list.classList.toggle('show')
 })
 
